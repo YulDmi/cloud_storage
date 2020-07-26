@@ -21,7 +21,6 @@ public class Controller {
             e.printStackTrace();
         }
         start();
-
     }
 
     private void start() {
@@ -46,7 +45,7 @@ public class Controller {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            System.out.println(" ошибка соединения или не верная команда");
+            System.out.println("ошибка соединения или не верная команда");
         }finally {
             try {
                 socket.close();
