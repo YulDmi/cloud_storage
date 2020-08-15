@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81590f7d-2fdb-42cd-aff4-1c925b8dc68a" name="Default Changelist" comment="" />
+    <list default="true" id="81590f7d-2fdb-42cd-aff4-1c925b8dc68a" name="Default Changelist" comment="netty1">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/FileDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/FileDelete.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/resources/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_server/src/main/java/CloudServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/src/main/java/CloudServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_server/target/classes/CloudServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/target/classes/CloudServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_server/target/classes/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/target/classes/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_server/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/target/classes/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/16.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/server/fgjdgj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/FileUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user2/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user3/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user4/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/IO/FileUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/IO/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user2/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user3/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user4/1.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson1" />
+        <entry key="$PROJECT_DIR$" value="lesson2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,20 +95,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaLevel2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/resources/serverFiles" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="IO" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\clientFiles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\serverFiles" />
+      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="IO" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -97,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="cloud_client" />
       <method v="2">
@@ -185,24 +227,36 @@
       <option name="project" value="LOCAL" />
       <updated>1597413390822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson2/2">
+      <created>1597413465042</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597413465042</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson1" />
     <MESSAGE value="lesson2" />
     <MESSAGE value="lesson2/1" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2/1" />
+    <MESSAGE value="lesson2/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2/2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="90" key="#Auto_Import" timestamp="1597421115547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="90" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1597421115547" />
     <state x="452" y="90" key="#Project_Structure" timestamp="1597405650757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="90" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1597405650757" />
-    <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595741711488">
+    <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597420089086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595741711488" />
+    <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597420089086" />
     <state x="721" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1597411828932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,10 +265,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="348" width="467" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1595744732625" />
-    <state x="545" y="42" key="CommitChangelistDialog2" timestamp="1597413382633">
+    <state x="545" y="42" key="CommitChangelistDialog2" timestamp="1597510943512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="42" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597413382633" />
+    <state x="545" y="42" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597510943512" />
     <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1595438333401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,33 +281,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="155" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595433669528" />
-    <state width="1865" height="203" key="GridCell.Tab.0.bottom" timestamp="1597412980900">
+    <state width="1865" height="203" key="GridCell.Tab.0.bottom" timestamp="1597510753615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597412980900" />
-    <state width="1865" height="203" key="GridCell.Tab.0.center" timestamp="1597412980900">
+    <state width="1865" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597510753615" />
+    <state width="1865" height="203" key="GridCell.Tab.0.center" timestamp="1597510753614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597412980900" />
-    <state width="1865" height="203" key="GridCell.Tab.0.left" timestamp="1597412980900">
+    <state width="1865" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597510753614" />
+    <state width="1865" height="203" key="GridCell.Tab.0.left" timestamp="1597510753614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597412980900" />
-    <state width="1865" height="203" key="GridCell.Tab.0.right" timestamp="1597412980900">
+    <state width="1865" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597510753614" />
+    <state width="1865" height="203" key="GridCell.Tab.0.right" timestamp="1597510753615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597412980900" />
+    <state width="1865" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597510753615" />
     <state x="377" y="88" key="Maven.ArtifactSearchDialog" timestamp="1597411918451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="377" y="88" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597411918451" />
-    <state x="452" y="168" key="Vcs.Push.Dialog.v2" timestamp="1597413395245">
+    <state x="452" y="168" key="Vcs.Push.Dialog.v2" timestamp="1597413469495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597413395245" />
-    <state x="230" y="143" key="new project wizard" timestamp="1595353957601">
+    <state x="452" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597413469495" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597415636210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="230" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595353957601" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597415636210" />
+    <state x="461" y="176" key="new project wizard" timestamp="1597504470092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="176" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1597504470092" />
+    <state x="642" y="61" key="refactoring.ChangeSignatureDialog" timestamp="1597414116435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="642" y="61" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597414116435" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1597415088364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597415088364" />
   </component>
 </project>
