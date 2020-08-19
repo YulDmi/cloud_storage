@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <HBox>
+      <AnchorPane prefHeight="63.0" prefWidth="494.0" style="-fx-background-color: grey;">
+         <children>
+              <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="28.0" layoutY="16.0" prefHeight="31.0" prefWidth="189.0" text="Локальная папка" textFill="#f5f0f0">
+              <font>
+                  <Font name="System Bold Italic" size="21.0" />
+              </font>
+            </Label>
+              <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="257.0" layoutY="14.0" prefHeight="35.0" prefWidth="223.0" text="Облачная папка" textFill="#f8f8f8">
+                  <font>
+                      <Font name="System Bold Italic" size="21.0" />
+                  </font>
+            </Label>
+         </children>
+      </AnchorPane>
+<!--        <TextField fx:id="textField" editable="false" HBox.hgrow="ALWAYS">-->
+<!--            <padding>-->
+<!--                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />-->
+<!--            </padding></TextField>-->
+        <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+        </padding>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <ListView fx:id="lv" HBox.hgrow="ALWAYS" />
+        <ListView fx:id="lv2" HBox.hgrow="ALWAYS" />
+    </HBox>
+<!--    <HBox >-->
+<!--        <Button fx:id="send" onAction="#sendCommand" layoutX="410.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0"-->
+<!--                text="Send"/>-->
+<!--        <TextField fx:id="txt" layoutX="14.0" layoutY="461.0" prefHeight="31.0" prefWidth="383.0"/>-->
+<!--    </HBox>-->
+    <HBox spacing="5">
+        <Button fx:id="send" maxWidth="Infinity" onAction="#sendCommand" text="Скачать файл с облако" HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="upload" maxWidth="Infinity" onAction="#upload" text="Загрузить файл на облако" HBox.hgrow="ALWAYS" />
+        <Button fx:id="delete" maxWidth="Infinity" onAction="#sendDelete" text="Удалить файл из облако" HBox.hgrow="ALWAYS" />
+<!--        <Button maxWidth="Infinity" onAction="#btnExit" text="Выход из программы" HBox.hgrow="ALWAYS" />-->
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+    </HBox>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
-          xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controller">
-    <AnchorPane prefHeight="501.0" prefWidth="490.0">
-        <ListView fx:id="lv" layoutX="14.0" layoutY="14.0" prefHeight="439.0" prefWidth="459.0"/>
-        <Button fx:id="send" onAction="#sendCommand" layoutX="410.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0"
-                text="Send"/>
-        <TextField fx:id="txt" layoutX="14.0" layoutY="461.0" prefHeight="31.0" prefWidth="383.0"/>
-    </AnchorPane>
-</GridPane>
+</VBox>

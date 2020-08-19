@@ -9,12 +9,70 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class CloudServerHandler extends ChannelInboundHandlerAdapter {
     private final String serverPath = "./common/src/main/resources/serverFiles";
+    private static HashMap<String, String> map = new HashMap<>();
+
+    static {
+        map.put("login1", "pass1");
+        map.put("login2", "pass2");
+        map.put("login3", "pass3");
+    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        if (msg instanceof FileAut) {
+            System.out.println("Проверка аутентификации");
+
+            FileAut fileAut = (FileAut) msg;
+            System.out.println(fileAut.isExist());
+            if (fileAut.isExist()) {
+                if (map.containsKey(fileAut.getLogin()) && map.get(fileAut.getLogin()).equals(fileAut.getPass())) {
+                    ctx.writeAndFlush(new FileAnswer(true, ""));
+                    System.out.println("It is OK");
+                } else {
+                    ctx.writeAndFlush(new FileAnswer(false, "Логин или пароль не верные"));
+                    System.out.println("Логин или пароль не верные");
+                }
+            } else {
+                if (map.containsKey(fileAut.getLogin())) {
+                    ctx.writeAndFlush(new FileAnswer(false, "Данный логин уже занят"));
+                    System.out.println("Логин уже занят");
+                } else {
+                    System.out.println("Добавляю в мапу");
+                    map.put(fileAut.getLogin(), fileAut.getPass());
+                    System.out.println(map.size());
+                    System.out.println("Регистрация прошла успешно");
+                    ctx.writeAndFlush(new FileAnswer(true, ""));
+                }
+
+
+            }
+
+
+//
+//
+//            if (fileAut.isExist()) {
+//                if (!(map.get(fileAut.getLogin())).equals(fileAut.getPass())) {
+//                    ctx.writeAndFlush(new FileAnswer(false, "Логин или пароль не верные"));
+//                    System.out.println("Логин или пароль не верные");
+//                }
+//            } else {
+//                map.put(fileAut.getLogin(), fileAut.getPass());
+//                System.out.println("Регистрация прошла успешно");
+//            }
+//            ctx.writeAndFlush(new FileAnswer(true, ""));
+        }
+        if (msg instanceof FileList) {
+            FileList fl = new FileList();
+            File dir = new File(serverPath);
+            for (String file : dir.list()) {
+                fl.getList().add(file);
+            }
+            ctx.writeAndFlush(fl);
+        }
         if (msg instanceof FileRequest) {
             new Thread(() -> {
                 FileRequest fr = (FileRequest) msg;
@@ -41,7 +99,7 @@ public class CloudServerHandler extends ChannelInboundHandlerAdapter {
                             Thread.sleep(100);
                             System.out.println("Отправлена часть : " + fm.getPart());
                         }
-                        System.out.println("Весь файл отправлен. Размер файла : " + Files.size(Paths.get(serverPath + "/" + fr.getFilename()) ) );
+                        System.out.println("Весь файл отправлен. Размер файла : " + Files.size(Paths.get(serverPath + "/" + fr.getFilename())));
                     } catch (IOException | InterruptedException e) {
                         e.printStackTrace();
                     }
