@@ -5,10 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 
@@ -23,25 +20,15 @@ public class SignUpController implements Initializable {
     public Button reg;
     public TextField login;
     public PasswordField password;
-    private static HashMap<String, String> map;
-    private static Socket socket;
-    private static ObjectDecoderInputStream is;
-    private static ObjectEncoderOutputStream os;
+    private static Connect connect;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        map = new HashMap<>();
-        try {
-            socket = new Socket("localhost", 8189);
-            is = new ObjectDecoderInputStream(socket.getInputStream(), 1024 * 1024 * 100);
-            os = new ObjectEncoderOutputStream(socket.getOutputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        connect = Connect.getInstance();
     }
 
     public void enter(ActionEvent actionEvent) {
-
         sendFileAut(true);
     }
 
@@ -51,72 +38,40 @@ public class SignUpController implements Initializable {
 
     private void sendFileAut(boolean bool) {
         String log = login.getText();
-        System.out.println(login.getText());
         String pass = password.getText();
-        System.out.println(password.getText());
         if (!log.isEmpty() && !pass.isEmpty()) {
             FileAut fileAut = new FileAut(log, pass, bool);
-            sendMessage(fileAut);
-            Object o = readMessage();
+            connect.sendMessage(fileAut);
+            Object o = connect.readMessage();
             if (o instanceof FileAnswer) {
                 FileAnswer fa = (FileAnswer) o;
                 if (fa.isBool()) {
-                    signUp.getScene().getWindow().hide();
-                    FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("sample.fxml"));
-                    try {
-                        loader.load();
-                    }catch (IOException e){
-                        System.out.println("что-то пошло не так");
+                    if (!fa.getText().isEmpty()) {
+                        TextHelper.printAlertText(fa.getText());
                     }
-
-                    Parent root = loader.getRoot();
-                    Stage stage = new Stage();
-                    stage.setScene(new Scene(root));
-                    stage.showAndWait();
-                    // закрываем это и открываем основное окно
+                    startNewScene();
                 } else {
-                    printText(fa.getText());
+                    TextHelper.printAlertText(fa.getText());
                 }
             }
         } else {
-            printText("Логин или пароль не введены!");
+            TextHelper.printAlertText("Логин или пароль не введены!");
         }
     }
 
-    private void printText(String text) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-
-        alert.setTitle("Information");
-        alert.setHeaderText(null);
-        alert.setContentText(text);
-
-        alert.showAndWait();
-    }
-
-    public static boolean sendMessage(AbstractMessage msg) {
+    private void startNewScene() {
+        signUp.getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("sample.fxml"));
         try {
-            os.writeObject(msg);
-            return true;
+            loader.load();
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
         } catch (IOException e) {
-            e.printStackTrace();
-            try {
-                socket.close();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+           TextHelper.printAlertText("что-то пошло не так");
         }
-        return false;
-    }
-
-    public static AbstractMessage readMessage() {
-        Object o = null;
-        try {
-            o = is.readObject();
-        } catch (ClassNotFoundException | IOException e) {
-            e.printStackTrace();
-        }
-        return (AbstractMessage) o;
     }
 
 }

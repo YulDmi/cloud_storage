@@ -8,6 +8,12 @@ public class FileMessage extends AbstractMessage {
     private int part;
     private int count;
 
+    public FileMessage(String filename, byte[] data,  int count) {
+        this.filename = filename;
+        this.data = data;
+        this.count = count;
+
+    }
     public String getFilename() {
         return filename;
     }
@@ -16,14 +22,9 @@ public class FileMessage extends AbstractMessage {
         return data;
     }
 
-    public int getPart() {
-        return part;
-    }
+    public int getPart() { return part; }
 
-    public int getCount() {
-        return count;
-    }
-
+    public int getCount() { return count; }
 
     public void setData(byte[] data) {
         this.data = data;
@@ -34,10 +35,5 @@ public class FileMessage extends AbstractMessage {
     }
 
 
-    public FileMessage(String filename, byte[] data,  int count) {
-        this.filename = filename;
-        this.data = data;
-        this.count = count;
 
-    }
 }

@@ -5,47 +5,40 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
-    <HBox>
-      <AnchorPane prefHeight="63.0" prefWidth="494.0" style="-fx-background-color: grey;">
-         <children>
-              <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="28.0" layoutY="16.0" prefHeight="31.0" prefWidth="189.0" text="Локальная папка" textFill="#f5f0f0">
-              <font>
-                  <Font name="System Bold Italic" size="21.0" />
-              </font>
-            </Label>
-              <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="257.0" layoutY="14.0" prefHeight="35.0" prefWidth="223.0" text="Облачная папка" textFill="#f8f8f8">
-                  <font>
-                      <Font name="System Bold Italic" size="21.0" />
-                  </font>
-            </Label>
-         </children>
-      </AnchorPane>
-<!--        <TextField fx:id="textField" editable="false" HBox.hgrow="ALWAYS">-->
-<!--            <padding>-->
-<!--                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />-->
-<!--            </padding></TextField>-->
+<VBox alignment="center" prefHeight="502.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+          <HBox HBox.hgrow="ALWAYS">
+
+                  <Label fx:id="label" alignment="CENTER" maxWidth="Infinity" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: grey;" text="Локальная папка" textAlignment="JUSTIFY" textFill="#f5f0f0" HBox.hgrow="ALWAYS">
+                      <font>
+                          <Font name="System Bold Italic" size="21.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="label2" alignment="CENTER" maxWidth="Infinity" style="-fx-background-color: grey;" text="Облачная папка" textAlignment="RIGHT" textFill="#f8f8f8" HBox.hgrow="ALWAYS">
+                      <font>
+                          <Font name="System Bold Italic" size="21.0" />
+                      </font>
+                  </Label>
         <padding>
             <Insets bottom="5.0" right="5.0" top="5.0" />
         </padding>
     </HBox>
-    <HBox VBox.vgrow="ALWAYS">
-        <ListView fx:id="lv" HBox.hgrow="ALWAYS" />
-        <ListView fx:id="lv2" HBox.hgrow="ALWAYS" />
+        <HBox>
+            <ComboBox fx:id="disk" onAction="#selectDisk" />
+            <TextField fx:id="textField" editable="false" prefHeight="25.0" prefWidth="598.0" VBox.vgrow="ALWAYS" />
+            <Button onAction="#btnUp"  focusTraversable="false" text="Вверх" />
+        </HBox>
+    <HBox prefHeight="356.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+
+        <TableView fx:id="tv" prefHeight="377.0" prefWidth="264.0" HBox.hgrow="ALWAYS" />
+        <TableView fx:id="tv2" prefHeight="377.0" prefWidth="264.0" HBox.hgrow="ALWAYS" />
     </HBox>
-<!--    <HBox >-->
-<!--        <Button fx:id="send" onAction="#sendCommand" layoutX="410.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0"-->
-<!--                text="Send"/>-->
-<!--        <TextField fx:id="txt" layoutX="14.0" layoutY="461.0" prefHeight="31.0" prefWidth="383.0"/>-->
-<!--    </HBox>-->
     <HBox spacing="5">
-        <Button fx:id="send" maxWidth="Infinity" onAction="#sendCommand" text="Скачать файл с облако" HBox.hgrow="ALWAYS">
+        <Button fx:id="send" maxWidth="Infinity" focusTraversable="false" onAction="#sendDownload" text="Скачать файл с облако" HBox.hgrow="ALWAYS">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding></Button>
-        <Button fx:id="upload" maxWidth="Infinity" onAction="#upload" text="Загрузить файл на облако" HBox.hgrow="ALWAYS" />
-        <Button fx:id="delete" maxWidth="Infinity" onAction="#sendDelete" text="Удалить файл из облако" HBox.hgrow="ALWAYS" />
-<!--        <Button maxWidth="Infinity" onAction="#btnExit" text="Выход из программы" HBox.hgrow="ALWAYS" />-->
+        <Button fx:id="upload" maxWidth="Infinity" focusTraversable="false" onAction="#sendUpload" text="Загрузить файл на облако" HBox.hgrow="ALWAYS" />
+        <Button fx:id="delete" maxWidth="Infinity" focusTraversable="false" onAction="#sendDelete" text="Удалить файл" HBox.hgrow="ALWAYS" />
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
         </padding>
