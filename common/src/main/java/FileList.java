@@ -1,9 +1,10 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class FileList extends AbstractMessage {
-    private ArrayList<String> list;
+public class FileList extends AbstractMessage implements Serializable {
+    private ArrayList<FileInfo> list;
 
-    public ArrayList<String> getList() {
+    public ArrayList<FileInfo> getList() {
         return list;
     }
 
@@ -11,4 +12,5 @@ public class FileList extends AbstractMessage {
     public FileList(){
         this.list = new ArrayList<>();
     }
+
 }
