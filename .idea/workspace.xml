@@ -1,42 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81590f7d-2fdb-42cd-aff4-1c925b8dc68a" name="Default Changelist" comment="netty1">
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/11.txt" afterDir="false" />
+    <list default="true" id="81590f7d-2fdb-42cd-aff4-1c925b8dc68a" name="Default Changelist" comment="netty3">
+      <change afterPath="$PROJECT_DIR$/cloud_client/src/main/java/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/src/main/java/TextHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/target/classes/Connect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/target/classes/Controller$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/target/classes/Controller$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/target/classes/META-INF/cloud_client.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_client/target/classes/TextHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/FileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/MyClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/login2/DSC_0062.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/login2/MyClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/login2/Аннотация 2019-11-21 162045.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/FileInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/MyClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/login2/DSC_0062.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/login2/MyClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/login2/Аннотация 2019-11-21 162045.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud_client/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/src/main/java/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/java/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/src/main/resources/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_client/target/classes/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_client/target/classes/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud_server/src/main/java/CloudServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/src/main/java/CloudServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud_server/target/classes/CloudServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_server/target/classes/CloudServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/FileAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/FileAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/FileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/FileList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/FileMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/FileMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Client.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Controller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/FileUtility.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/IO/ServerHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/serverFiles/login2/11.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user1/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user2/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user3/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/resources/serverFiles/user4/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/FileAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/FileAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/FileList.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/FileList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/FileMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/FileMessage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Client.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Controller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/IO/FileUtility.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/IO/Server.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/IO/ServerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/clientFiles/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/clientFiles/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/serverFiles/login2/11.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user1/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user2/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/serverFiles/user3/1.txt" beforeDir="false" />
@@ -53,6 +66,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -60,7 +74,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="netty1" />
+        <entry key="$PROJECT_DIR$" value="netty3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,22 +108,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/resources/clientFiles" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\clientFiles" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="IO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\clientFiles" />
       <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\serverFiles" />
       <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="IO" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\serverFiles\login1\login2" />
+      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\serverFiles\t" />
+      <recent name="C:\Users\ASUS\IdeaProjects\08\untitled1\common\src\main\resources\clientFiles" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -241,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597512127321</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="netty2">
+      <created>1597610181856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597610181856</updated>
+    </task>
+    <task id="LOCAL-00007" summary="netty3">
+      <created>1597866774470</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597866774470</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,37 +284,47 @@
     <MESSAGE value="lesson2/1" />
     <MESSAGE value="lesson2/2" />
     <MESSAGE value="netty1" />
-    <option name="LAST_COMMIT_MESSAGE" value="netty1" />
+    <MESSAGE value="netty2" />
+    <MESSAGE value="netty3" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="90" key="#Auto_Import" timestamp="1597421115547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="90" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1597421115547" />
-    <state x="452" y="90" key="#Project_Structure" timestamp="1597405650757">
+    <state x="452" y="90" key="#Project_Structure" timestamp="1598118397855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="90" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1597405650757" />
+    <state x="452" y="90" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1598118397855" />
     <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597420089086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597420089086" />
-    <state x="687" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597576831421">
+    <state x="687" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598181953504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597576831421" />
-    <state x="721" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1597570781136">
+    <state x="687" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598181953504" />
+    <state x="721" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1598211476518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597570781136" />
-    <state x="726" y="348" width="467" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595744732625">
+    <state x="721" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598211476518" />
+    <state x="726" y="348" width="467" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598177801876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="726" y="348" width="467" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1595744732625" />
-    <state x="545" y="42" key="CommitChangelistDialog2" timestamp="1597512123418">
+    <state x="726" y="348" width="467" height="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1598177801876" />
+    <state x="725" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1598293027878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="42" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597512123418" />
+    <state x="725" y="306" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598293027878" />
+    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598288607422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598288607422" />
+    <state x="545" y="42" key="CommitChangelistDialog2" timestamp="1597866764835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="545" y="42" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597866764835" />
     <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1595438333401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,34 +337,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="155" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595433669528" />
-    <state width="1865" height="203" key="GridCell.Tab.0.bottom" timestamp="1597609716826">
+    <state width="1865" height="206" key="GridCell.Tab.0.bottom" timestamp="1598296208494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597609716826" />
-    <state width="1865" height="203" key="GridCell.Tab.0.center" timestamp="1597609716826">
+    <state width="1865" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598296208494" />
+    <state width="1865" height="206" key="GridCell.Tab.0.center" timestamp="1598296208494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597609716826" />
-    <state width="1865" height="203" key="GridCell.Tab.0.left" timestamp="1597609716825">
+    <state width="1865" height="206" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598296208494" />
+    <state width="1865" height="206" key="GridCell.Tab.0.left" timestamp="1598296208494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597609716825" />
-    <state width="1865" height="203" key="GridCell.Tab.0.right" timestamp="1597609716826">
+    <state width="1865" height="206" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598296208494" />
+    <state width="1865" height="206" key="GridCell.Tab.0.right" timestamp="1598296208494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597609716826" />
+    <state width="1865" height="206" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598296208494" />
+    <state width="1865" height="335" key="GridCell.Tab.1.bottom" timestamp="1598181265259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598181265259" />
+    <state width="1865" height="335" key="GridCell.Tab.1.center" timestamp="1598181265259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="335" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598181265259" />
+    <state width="1865" height="335" key="GridCell.Tab.1.left" timestamp="1598181265259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="335" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598181265259" />
+    <state width="1865" height="335" key="GridCell.Tab.1.right" timestamp="1598181265259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="335" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598181265259" />
     <state x="377" y="88" key="Maven.ArtifactSearchDialog" timestamp="1597411918451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="377" y="88" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597411918451" />
-    <state x="452" y="168" key="Vcs.Push.Dialog.v2" timestamp="1597512132004">
+    <state x="733" y="442" key="ReplaceDuplicatesPrompt" timestamp="1597854664783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597512132004" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597415636210">
+    <state x="733" y="442" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1597854664782" />
+    <state x="452" y="168" key="Vcs.Push.Dialog.v2" timestamp="1597866781176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597415636210" />
+    <state x="452" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597866781176" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598214617438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598214617438" />
+    <state x="599" y="39" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598085913612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="599" y="39" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598085913612" />
+    <state x="951" y="305" width="665" height="619" key="extract.method.dialog" timestamp="1598291249525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="951" y="305" width="665" height="619" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598291249525" />
     <state x="461" y="176" key="new project wizard" timestamp="1597504470092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -333,5 +405,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597415088364" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1598166277134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598166277134" />
   </component>
 </project>

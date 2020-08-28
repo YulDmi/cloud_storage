@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="344.0" prefWidth="452.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+   <children>
+      <AnchorPane layoutY="79.0" prefHeight="258.0" prefWidth="452.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="signUp"  onAction="#enter" layoutX="38.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="Войти" />
+            <Button fx:id="reg" onAction="#checkIn" layoutX="251.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="Зарегистрироваться" />
+            <TextField fx:id="login" layoutX="134.0" layoutY="71.0" promptText="Login" />
+            <PasswordField fx:id="password" layoutX="134.0" layoutY="110.0" promptText="Password" />
+            <Label layoutX="10.0" layoutY="14.0" prefHeight="25.0" prefWidth="432.0" text="Введите логин и пароль. Если у Вас нет логина и пароля - зарегистрируйтесь." textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="138.0" layoutY="14.0" prefHeight="45.0" prefWidth="133.0" text="Авторизация" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
