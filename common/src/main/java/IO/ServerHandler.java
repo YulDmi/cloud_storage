@@ -42,7 +42,7 @@ public class ServerHandler implements Runnable {
                     } else {
                         os.writeUTF("File not exist");
                     }
-                } else if (command.equals("./upload")){
+                } else if (command.equals("./upload")) {
                     readFile();
                 } else {
                     os.writeUTF("Не верная команда");
